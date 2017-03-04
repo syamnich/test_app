@@ -1,0 +1,15 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+    - vendor/**/*
+    - tmp/**/*
+  Exclude:
+    - db/schema.rb
+  Style/FrozenStringLiteralComment:
+    EnforcedStyle: always
+Documentation:
+    Enabled: false
