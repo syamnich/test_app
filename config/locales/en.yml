@@ -21,3 +21,16 @@
 
 en:
   hello: "Hello world"
+  application:
+    header:
+      brand: 'TestApp'
+      sign_in: 'Sign in'
+      sign_up: 'Sign up'
+      settings: 'Settings'
+      exit: 'Exit'
+  sessions:
+    new:
+      sign_in: 'Sign in'
+  users:
+    new:
+      sign_up: 'Sign up'
