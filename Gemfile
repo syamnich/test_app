@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby `cat .ruby-version`.strip
 
 gem 'rails', '~> 5.0.1'
+gem 'bcrypt'
 gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'bootstrap-sass'
