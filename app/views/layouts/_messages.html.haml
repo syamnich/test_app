@@ -1,6 +1,6 @@
 - flash.each do |key, value|
   %div{ class: "alert alert-#{key}" }
-    %a.close{ "data-dismiss" => "alert", href: "#" } ×
+    %a.close.fade.in{ "data-dismiss" => "alert", href: "#" } ×
     %ul
       - if value.is_a? Array
         - value.each do |message|
