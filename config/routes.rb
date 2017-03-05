@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  root to: 'walls#show'
 
   get 'signup', to: 'users#new'
   get 'login', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
-
-  root to: 'walls#show'
 
   resource :wall, only: :show
 
