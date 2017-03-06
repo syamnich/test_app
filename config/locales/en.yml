@@ -21,7 +21,7 @@
 
 en:
   hello: "Hello world"
-  application:
+  layouts:
     header:
       brand: 'TestApp'
       sign_in: 'Sign in'

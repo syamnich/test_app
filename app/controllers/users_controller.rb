@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
   def create
     if new_user.update_attributes(user_params)
+      sign_in new_user
       flash[:success] = 'User successfully created'
       redirect_to root_url
     else
