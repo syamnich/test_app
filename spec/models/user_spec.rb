@@ -5,6 +5,7 @@ describe User, type: :model do
   it { expect(user).to respond_to(:password_digest) }
   it { expect(user).to respond_to(:password) }
   it { expect(user).to respond_to(:password_confirmation) }
+  it { expect(user).to respond_to(:remember_token) }
   it { expect(user).to respond_to(:authenticate) }
   it { expect(user).to be_valid }
 
@@ -87,5 +88,10 @@ describe User, type: :model do
   describe "with a password that's too short" do
     before { user.password = user.password_confirmation = 'a' * 2 }
     it { expect(user).not_to be_valid }
+  end
+
+  describe 'remember token' do
+    before { user.save }
+    it { expect(user.remember_token).not_to be_blank }
   end
 end
