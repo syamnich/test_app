@@ -89,9 +89,4 @@ describe User, type: :model do
     before { user.password = user.password_confirmation = 'a' * 2 }
     it { expect(user).not_to be_valid }
   end
-
-  describe 'remember token' do
-    before { user.save }
-    it { expect(user.remember_token).not_to be_blank }
-  end
 end
