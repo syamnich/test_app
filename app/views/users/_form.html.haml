@@ -1,0 +1,11 @@
+= form_for(user, html: { role: 'form' }) do |f|
+  .form-group
+    = f.label :email
+    = f.email_field :email, class: 'form-control'
+  .form-group
+    = f.label :password
+    = f.password_field :password, class: 'form-control'
+  .form-group
+    = f.label :password_confirmation, 'Confirmation'
+    = f.password_field :password_confirmation, class: 'form-control'
+  = f.submit submit, class: 'btn btn-primary'

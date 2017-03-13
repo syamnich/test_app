@@ -3,14 +3,4 @@
     .panel-heading
       %h4= t('.sign_up')
     .panel-body
-      = form_for(new_user, html: { role: 'form' }) do |f|
-        .form-group
-          = f.label :email
-          = f.email_field :email, autofocus: true, class: 'form-control'
-        .form-group
-          = f.label :password
-          = f.password_field :password, class: 'form-control'
-        .form-group
-          = f.label :password_confirmation, 'Confirmation'
-          = f.password_field :password_confirmation, class: 'form-control'
-        = f.submit t('.sign_up'), class: 'btn btn-primary'
+      = render 'form', user: new_user, submit: t('.sign_up')

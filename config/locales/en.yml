@@ -28,9 +28,15 @@ en:
       sign_up: 'Sign up'
       settings: 'Settings'
       exit: 'Exit'
+      users: 'Users'
   sessions:
     new:
       sign_in: 'Sign in'
   users:
     new:
       sign_up: 'Sign up'
+    edit:
+      profile: 'Update your profile'
+      save_changes: 'Save changes'
+    index:
+      users: 'All users'
